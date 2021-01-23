@@ -21,11 +21,11 @@ provider:
   profile: serverless
   region: eu-west-2
 package:
-  artifact: target/hello-dev.jar
+  artifact: target/tasks-api-java-dev.jar
 
 functions:
   tasks-api:
-    handler: com.serverless.Handler
+    handler: com.techreturners.Handler
     events:
       - http:
           path: tasks
