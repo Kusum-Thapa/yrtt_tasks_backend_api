@@ -28,5 +28,5 @@ functions:
     handler: com.techreturners.Handler
     events:
       - http:
-          path: tasks
+          path: users/{userId}/tasks
           method: get
