@@ -24,8 +24,8 @@ package:
   artifact: target/tasks-api-java-dev.jar
 
 functions:
-  tasks-api:
-    handler: com.techreturners.Handler
+  get-task-java-api:
+    handler: com.techreturners.GetTasksHandler
     events:
       - http:
           path: users/{userId}/tasks
