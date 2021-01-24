@@ -3,14 +3,14 @@ package com.techreturners.model;
 public class Task {
     private String taskId;
     private String description;
-    private boolean completed;
+    private boolean dbsRequired;
 
     public Task(){}
 
-    public Task(String taskId, String description, boolean completed) {
+    public Task(String taskId, String description, boolean dbsRequired) {
         this.taskId = taskId;
         this.description = description;
-        this.completed = completed;
+        this.dbsRequired = dbsRequired;
     }
 
     public String getTaskId() {
@@ -21,7 +21,7 @@ public class Task {
         return description;
     }
 
-    public boolean isCompleted() {
-        return completed;
+    public boolean isDbsRequired() {
+        return dbsRequired;
     }
 }
